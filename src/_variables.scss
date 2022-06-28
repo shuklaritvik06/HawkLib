@@ -1,9 +1,9 @@
 // Colors
 
-$primary: #ff5a5f;
-$secondary: #5ca4a9;
-$tertiary: #02b2c9;
-$text-color: #333;
+$primary: #ff5a5f !default;
+$secondary: #5ca4a9 !default;
+$tertiary: #02b2c9 !default;
+$text-color: #333 !default;
 
 $colors: (
   "primary": $primary,
