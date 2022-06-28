@@ -1,0 +1,62 @@
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+  .text-hover-#{$key}:hover {
+    color: $val;
+  }
+  .bg-#{$key} {
+    background-color: $val;
+  }
+  .bg-hover-#{$key}:hover {
+    background-color: $val;
+  }
+  .border-#{$key} {
+    border-color: $val;
+  }
+  .border-hover-#{$key}:hover {
+    border-color: $val;
+  } 
+  @if ($val!= black and $val!= white) {
+    @for $i from 1 to 9 {
+      .text-#{$key}-l-#{$i} {
+        color: mix(white,$val,$i*10);
+      }
+      .text-hover-#{$key}-l-#{$i}:hover {
+        color: mix(white,$val,$i*10);
+      }
+      .bg-#{$key}-l-#{$i} {
+        background-color: mix(white,$val,$i*10);
+      }
+      .bg-hover-#{$key}-l-#{$i}:hover {
+        color: mix(white,$val,$i*10);
+      }
+      .border-#{$key}-l-#{$i} {
+        border-color: mix(white,$val,$i*10);
+      }
+      .border-hover-#{$key}-l-#{$i}:hover {
+        color: mix(white,$val,$i*10);
+      }
+    }
+    @for $i from 1 to 9 {
+      .text-#{$key}-d-#{$i} {
+        color: mix(black,$val,$i*10);
+      }
+      .text-hover-#{$key}-d-#{$i}:hover {
+        color: mix(black,$val,$i*10);
+      }
+      .bg-#{$key}-d-#{$i} {
+        background-color: mix(black,$val,$i*10);
+      }
+      .bg-hover-#{$key}-d-#{$i}:hover {
+        color: mix(black,$val,$i*10);
+      }
+      .border-#{$key}-d-#{$i} {
+        border-color: mix(black,$val,$i*10);
+      }
+      .border-hover-#{$key}-d-#{$i}:hover {
+        color: mix(black,$val,$i*10);
+      }
+    }
+  }
+}

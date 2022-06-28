@@ -1,0 +1,16 @@
+.card{
+   display: $display-block;
+   padding: $padding-large;
+   border-radius: $base-border-radius;
+   box-shadow: $mediumShadow;
+   max-width: 500px;
+  .card-title{
+    font-size: $font-size-tertiary;
+    font-weight: $font-weight-tertiary;
+    margin-bottom: $margin-small;
+  }
+  .card-body{
+    font-size: $font-size-tertiary;
+    font-weight: $font-weight-primary;
+  }
+}

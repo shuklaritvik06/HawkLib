@@ -1,0 +1,6 @@
+@mixin hover($bgColor) {
+    &:hover {
+        background-color:  lighten($bgColor,5);
+        color: white;
+    }
+}

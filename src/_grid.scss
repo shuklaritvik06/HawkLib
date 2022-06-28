@@ -1,0 +1,63 @@
+@use "sass:math";
+@import "mixins/gridClass";
+
+$grid-columns: 12;
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+);
+$layout: flex-start, flex-end, center, space-between, space-around;
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+@each $val in $layout {
+  .justify-#{$val} {
+    justify-content: $val;
+  }
+}
+
+@each $val in $layout {
+  .items-#{$val} {
+    align-items: $val;
+  }
+}
+
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * {
+    padding: $val;
+  }
+  .gap-#{$key} {
+    margin-left: -$val;
+    margin-right: -$val;
+  }
+}
+
+@include xs {
+  @include grid();
+}
+@include sm {
+  @include grid();
+}
+@include md {
+  @include grid();
+}
+@include lg {
+  @include grid();
+}
+@include xl {
+  @include grid();
+}

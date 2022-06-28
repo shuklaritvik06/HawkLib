@@ -1,0 +1,29 @@
+@import "../mixins/buttonMixin";
+@import "../mixins/buttonHover";
+@import "../mixins/buttonOutlineHover";
+
+
+@each $key, $val in $colors {
+    .btn-#{$key} {
+        @include btn($val);
+        border: $base-border-width solid $val;
+        @include hover($val);
+    }
+    .btn-outline-#{$key} {
+        @include btn(#fff);
+        border: $base-border-width solid $val;
+        @include hoverOutline($val);
+    }
+}
+
+.btn{
+    @include btn;
+    border-color: $base-border-width solid $primary;
+    @include hover($primary);
+}
+
+.btn-outline{
+    @include btn(#fff);
+    border: $base-border-width solid $primary;
+    @include hoverOutline($primary);
+}

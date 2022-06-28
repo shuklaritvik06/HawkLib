@@ -1,0 +1,6 @@
+@mixin hoverOutline($bgColor){
+    &:hover {
+        background-color: $bgColor;
+        color: white;
+    }
+}

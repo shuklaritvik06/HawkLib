@@ -1,0 +1,101 @@
+// Colors
+
+$primary: #ff5a5f;
+$secondary: #5ca4a9;
+$tertiary: #02b2c9;
+$text-color: #333;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "text-color": $text-color,
+  "white": #fff,
+  "black": #333,
+  "blue": #5c5cff,
+  "green": #6ea95c,
+  "yellow": #fdf66c,
+  "orange": #ff9a5f,
+  "purple": #dc5cff,
+  "pink": #ff5af1,
+  "brown": #ff905c,
+  "gray": #afaea7,
+);
+
+// Shadow
+
+$smallShadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$mediumShadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$largeShadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+// Fonts
+
+$font-primary: "Open Sans", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+// Font sizes
+
+$base-font-size: 1rem;
+$font-size-primary: $base-font-size * 0.25;
+$font-size-secondary: $base-font-size * 0.75;
+$font-size-tertiary: $base-font-size * 1.25;
+
+// Font weights
+
+$font-weight-primary: 400;
+$font-weight-secondary: 500;
+$font-weight-tertiary: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 900;
+
+// Line heights
+
+$line-height: 1.5;
+
+// Letter spacing
+
+$letter-spacing: 0.5px;
+
+// Margins
+
+$base-margin: 1rem;
+$margin-small: $base-margin * 0.5;
+$margin-medium: $base-margin * 1;
+$margin-large: $base-margin * 2;
+
+// Paddings
+
+$base-padding: 1rem;
+$padding-small: $base-padding * 0.5;
+$padding-medium: $base-padding * 1;
+$padding-large: $base-padding * 2;
+
+
+// Borders
+
+$base-border-radius: 0.25rem;
+$border-radius-small: $base-border-radius * 0.5;
+$border-radius-medium: $base-border-radius * 1;
+$border-radius-large: $base-border-radius * 2;
+$rounded: 50%;
+
+// Border Widths
+
+$base-border-width: 2px;
+$border-width-small: $base-border-width * 0.5;
+$border-width-medium: $base-border-width * 1;
+$border-width-large: $base-border-width * 2;
+
+// Display
+
+$display-none: none;
+$display-block: block;
+$display-inline: inline;
+$display-inline-block: inline-block;
+$display-flex: flex;
+$display-grid: grid;
+
+// Height & Width
+
+$base-height: 0.25rem;
+$base-width: 0.25rem;
