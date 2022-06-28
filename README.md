@@ -103,3 +103,17 @@ Prefix -> "o"
 
 Similarly for width it's w-#{$value}
 
+
+### Box Shadow
+
+bs,bs-medium,bs-large
+
+### Font size
+
+- "default":secondary,
+- "primary": primary,
+- "secondary": secondary,
+- "tertiary": tertiary,
+- "b": bold,
+- "br": bolder,
+
